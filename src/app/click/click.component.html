@@ -1,0 +1,11 @@
+<div><button (click)='myEvent($event)'>Event</button></div>
+
+<button *ngIf="isCollapsed" (click)="toggleCollapse()">Show</button>
+<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Hide</button>
+
+<div *ngIf="!isCollapsed">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Animi, nobis magnam delectus tempore cupiditate reiciendis
+          officiis esse corporis, eum vitae obcaecati sequi minus
+          earum quia, commodi neque optio iste eos!</p>
+</div>
